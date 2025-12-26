@@ -11,10 +11,10 @@
 
 - [Modified TWRP](https://github.com/n00b69/woa-cepheus/releases/tag/Recovery)
 
-### Boot into TWRP
-> If your recovery has been replaced by the stock recovery, flash it again using
+### Boot into modified TWRP
+> While in fastboot mode, replace `path\to\moddedtwrp.img` with the actual path of the image
 ```cmd
-fastboot flash recovery path\to\moddedtwrp.img reboot recovery
+fastboot boot path\to\moddedtwrp.img
 ```
 
 #### Backing up your boot image

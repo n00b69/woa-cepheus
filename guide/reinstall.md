@@ -9,10 +9,10 @@
 
 - [Modified TWRP](https://github.com/n00b69/woa-cepheus/releases/tag/Recovery) (should already be installed)
 
-### Boot into TWRP
-> If MIUI has replaced your recovery, boot to fastboot and run
+### Boot into modified TWRP
+> While in fastboot mode, replace `path\to\moddedtwrp.img` with the actual path of the image
 ```cmd
-fastboot flash recovery path\to\twrp.img reboot recovery
+fastboot boot path\to\moddedtwrp.img
 ```
 
 #### Formatting the Windows partition

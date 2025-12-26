@@ -36,11 +36,16 @@
 cd path\to\platform-tools
 ```
 
-#### Flash the modded recovery
+#### Boot the modded recovery
 > Replace `path\to\moddedtwrp.img` with the actual path to the modded recovery image
 ```cmd
-fastboot flash recovery path\to\moddedtwrp.img reboot recovery
+fastboot boot path\to\moddedtwrp.img
 ```
+
+> [!Important]
+> If you get a black screen, try running the commands while on this black screen, as they may still work. If they don't, flash official stock MIUI and try again.
+>
+> If the recovery still refuses to boot or you don't want to switch ROMs, follow [this guide](/guide/1-altpartition.md) instead.
 
 #### Backing up your boot image
 > This will back up your boot image in the current directory
