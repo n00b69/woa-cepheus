@@ -9,7 +9,7 @@
 
 - [Windows on ARM image](https://arkt-7.github.io/woawin/)
 
-- [Drivers & UEFI](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest) (make sure you select MuCepheusDisableSecureBoot.img)
+- [Drivers & UEFI](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest) (make sure you select the **.img** file that has **SB** or **SecureBoot** in the name. Do NOT select **NOSB**.)
 
 ### Boot into modified TWRP
 > While in fastboot mode, replace `path\to\moddedtwrp.img` with the actual path of the image
@@ -79,21 +79,6 @@ dism /apply-image /ImageFile:path\to\install.esd /index:6 /ApplyDir:X:\
 > If any error shows up, such as "Failure when attempting to copy boot files", open `diskpart` again and assign any new letter to **ESPCEPHEUS**, then replace the letter `Y` in the next command with the letter that you just added.
 ```cmd
 bcdboot X:\Windows /s Y: /f UEFI
-```
-
-#### Enabling test signing
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" testsigning on
-```
-
-#### Disabling recovery
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" recoveryenabled no
-```
-
-#### Disabling integrity checks
-```cmd
-bcdedit /store Y:\EFI\Microsoft\BOOT\BCD /set "{default}" nointegritychecks on
 ```
 
 #### Remove the drive letter for ESP
