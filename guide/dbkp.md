@@ -29,7 +29,7 @@
 
 - [DualBoot Kernel Patcher](https://github.com/erdilS/Port-Windows-11-Xiaomi-Pad-5/releases/download/1.0/DualBootKernelPatcher.zip)
 
-- [cepheus.fd file](https://github.com/n00b69/woa-cepheus/releases/download/Files/cepheus.fd)
+- [cepheus.fd file](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest)
 
 ### Opening CMD as an admin
 > Open CMD as an **administrator**, then run the below command, replacing `path\to\platform-tools` with the actual path to the platform-tools folder, for example **C:\platform-tools**.
