@@ -5,7 +5,7 @@
 ## Dualbooting Android and Windows seamlessly
 
 ### Prerequisites
-- [UEFI image](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest) (make sure you select MuCepheusDisableSecureBoot.img)
+- [UEFI image](https://github.com/qaz6750/XiaoMi9-Drivers/releases/latest) (make sure you select the **.img** file that has **SB** or **SecureBoot** in the name. Do NOT select **NOSB**.)
 
 - [WOA Helper app](https://github.com/n00b69/woa-helper/releases/tag/APK)
 
